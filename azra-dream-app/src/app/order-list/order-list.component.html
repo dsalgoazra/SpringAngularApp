@@ -1,0 +1,11 @@
+<mat-card>
+  <mat-card-title>Order List</mat-card-title>
+  <mat-card-content>
+    <mat-list>
+      <mat-list-item *ngFor="let order of orders">
+        <img mat-list-avatar src="{{order.giphyUrl}}" alt="{{order.orderId}}">
+        <h3 mat-line>{{order.description}}</h3>
+      </mat-list-item>
+    </mat-list>
+  </mat-card-content>
+</mat-card>
